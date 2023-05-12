@@ -9,7 +9,7 @@ const ConexionApp = () => {
 		const nombre = document.getElementById("nombre").value;
 		const apellido = document.getElementById("apellido").value;
 		axios
-			.post(`http://localhost:3000/getData`)
+			.post(`https://serverpreguntas.onrender.com/getData`)
 			.then((res) => {
 				setData(res.data);
 			})
@@ -32,3 +32,4 @@ const ConexionApp = () => {
 };
 
 export default ConexionApp;
+
