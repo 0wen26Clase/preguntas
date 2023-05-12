@@ -89,7 +89,7 @@ const PreguntasApp = () => {
 		const correctas = correctCount;
 		const incorrectas = incorrectCount;
 		axios
-			.post(`http://localhost:3000/getData`, {
+			.post(`https://serverpreguntas.onrender.com/getData`, {
 				correctas: correctas,
 				incorrectas: incorrectas,
 				playerName: player,
